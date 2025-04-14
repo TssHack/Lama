@@ -11,25 +11,14 @@ const author = "ehsan fazli";
 ‎// لیست مدل‌ها (alias → مدل واقعی)
 
 const models = {
-  "llama4-maverick": "meta-llama/Llama-4-Maverick-Instruct-17Bx128E",
-  "llama4-scout": "meta-llama/Llama-4-Scout-Instruct-17Bx16E",
-  "llama3-70b": "meta-llama/Llama-3-70B-Instruct",
-  "llama3-8b": "meta-llama/Llama-3-8B-Instruct",
-  "llama3-free": "meta-llama/Llama-3-70B-Instruct-Turbo-Free",
-  "mixtral": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-  "gemma": "google/gemma-7b-it",
-  "deepseek": "deepseek-ai/deepseek-coder-33b-instruct",
-  "claude-opus": "anthropic/claude-3-opus-20240229",
-  "mistral-small": "mistralai/Mistral-Small-24B-Instruct-25.01",
-  "qwen-32b": "qwen/qwen-qwq-32b",
-  "qwen-72b": "qwen/qwen2-vl-72b-instruct",
-  "mistral-7b": "mistralai/mistral-7b-instruct",
-  "gemma-2b": "google/gemma-instruct-2b",
-  "meta-llama-3.1-8b": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo",
-  "meta-llama-3.3-70b": "meta-llama/Meta-Llama-3.3-70B-Instruct-Turbo",
-  "deepseek-r1-distill": "deepseek-ai/deepseek-r1-distill-llama-70b",
-  "qwen2.5-72b": "qwen/qwen2.5-72b-instruct",
-  "gemma-13b": "google/gemma-instruct-13b"
+  "llama4-maverick": "meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8",
+  "llama4-scout": "meta-llama/Llama-4-Scout-17B-16E-Instruct",
+  "llama3-70b": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "llama3-8b": "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo-classifier",
+  "llama3-free": "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
+  "mixtral": "meta-llama/Llama-Vision-Free",
+  "gemma": "google/gemma-2b-it",
+  "deepseek": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free"
 };
 
 // API Keyهای چرخشی
