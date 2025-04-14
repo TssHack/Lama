@@ -39,7 +39,7 @@ const apiKeys = [
   process.env.KEY3,
   process.env.KEY4,
   process.env.KEY5,
-  process.env.KEY5
+  process.env.KEY6
 ].filter(Boolean);
 
 let currentKeyIndex = 0;
