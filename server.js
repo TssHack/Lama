@@ -106,16 +106,20 @@ async function handleChatRequest(req, res) {
     // --- Process successful response ---
     // Extract the main response content from the Together AI JSON structure
     // Structure is typically: response.data.choices[0].message.content
-    const aiResponseContent = response.data?.choices?.[0]?.message?.content;
-    if (aiResponseContent) {
+    const aiResponseContent = response.data?.choices?.[0]?.message?.content || "";
+
+// حذف تگ <think> و محتوای داخلش
+    const cleanResponse = aiResponseContent.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+
+       
+    if (cleanResponse) {
       res.json({
         author,
-        response: aiResponseContent.trim()
+        response: cleanResponse
       });
     } else {
-      // If the response structure was unexpected (e.g., empty choices)
       console.error("Unexpected response structure received from Together AI:", response.data);
-      res.status(500).json({ // 500 Internal Server Error status code
+      res.status(500).json({
         author,
         error: "Received an invalid response structure from the AI service."
       });
