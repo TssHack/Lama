@@ -107,12 +107,10 @@ async function handleChatRequest(req, res) {
     // Extract the main response content from the Together AI JSON structure
     // Structure is typically: response.data.choices[0].message.content
     const aiResponseContent = response.data?.choices?.[0]?.message?.content;
-
     if (aiResponseContent) {
-      // Return only the response content and author (clean output)
       res.json({
         author,
-        response: aiResponseContent.trim() // trim() to remove potential leading/trailing whitespace
+        response: aiResponseContent.trim()
       });
     } else {
       // If the response structure was unexpected (e.g., empty choices)
