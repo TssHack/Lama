@@ -20,7 +20,7 @@ const models = {
   "gemma": "google/gemma-2b-it",
   "deepseek": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free",
   "deepseek-v3": "deepseek-ai/DeepSeek-V3",
-  "Qwen2.5": "Qwen/Qwen2.5-Coder-32B-Instruct"
+  "qwen2.5": "Qwen/Qwen2.5-Coder-32B-Instruct"
 };
 
 // Read API keys from environment variables
