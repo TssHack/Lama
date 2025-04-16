@@ -18,7 +18,8 @@ const models = {
   "llama3-free": "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",
   "mixtral": "meta-llama/Llama-Vision-Free", // Note: This name might differ from the actual Mixtral model. Please verify.
   "gemma": "google/gemma-2b-it",
-  "deepseek": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free"
+  "deepseek": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free",
+  "deepseek-v3": "deepseek-ai/DeepSeek-V3"
 };
 
 // Read API keys from environment variables
@@ -29,7 +30,8 @@ const apiKeys = [
   process.env.KEY3,
   process.env.KEY4,
   process.env.KEY5,
-  process.env.KEY6
+  process.env.KEY6,
+  process.env.KEY7
 ].filter(Boolean);
 
 // Check if at least one API key exists
