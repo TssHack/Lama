@@ -103,7 +103,7 @@ async function handleChatRequest(req, res) {
           Authorization: `Bearer ${apiKey}`,
           'Content-Type': 'application/json'
         },
-        timeout: 60000 // Set a timeout (e.g., 60 seconds) to prevent infinite waiting
+        timeout: 3600000 // Set a timeout (e.g., 60 seconds) to prevent infinite waiting
       }
     );
 
